@@ -64,8 +64,8 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: landscape
-theme: maupassant-hexo
-# theme: hexo-theme-raytaylorism
+theme: maupassant_hexo
+# theme: hexo-theme_raytaylorism
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
