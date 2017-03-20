@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: hexo_blog
+title: 凭栏映影
 subtitle:
 description:
 author: John Doe
@@ -71,5 +71,8 @@ theme: maupassant-hexo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git 
-  repo: git@github.com:jsplyy/jsplyy.github.io.git 
+  repo: 
+    github: git@github.com:jsplyy/jsplyy.github.io.git
+    oschina: git@git.oschina.net:jsplyy/jsplyy.git
   branch: master
+

@@ -1,7 +1,14 @@
 ---
 title: hexo配置记录
 ---
+
+``` 
+被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常
+```
+<!-- more -->
+
 ### deploy
+
 ```
 type: git #注意,这边是git不是github,hexo 3.0以后就要求使用git,不然会出现deploy失败情况.  
 repo: git@github.com:Helloxyw/Helloxyw.github.io.git  
@@ -46,7 +53,7 @@ npm install hexo / npm install hexo-cli g
 hexo init blog
 cd blog
 hexo generate
-```  
+```
 
 
 ### git同时push到多个仓库 oschina github coding
