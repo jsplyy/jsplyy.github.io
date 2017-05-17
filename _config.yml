@@ -7,12 +7,13 @@ title: 凭栏映影
 subtitle:
 description:
 author: John Doe
-language:
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://jsplyy.github.io
+# url: http://localhost
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -64,7 +65,8 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: landscape
-theme: maupassant_hexo
+# theme: maupassant_hexo
+theme: fexo
 # theme: hexo-theme_raytaylorism
 
 # Deployment
@@ -76,3 +78,15 @@ deploy:
     oschina: git@git.oschina.net:jsplyy/jsplyy.git
   branch: master
 
+# Extensions
+## Plugins: http://hexo.io/plugins/
+#RSS订阅
+plugin:
+- hexo-generator-feed
+#Feed Atom
+feed:
+type: atom
+path: atom.xml
+limit: 20
+
+rss: /atom.xml #rss地址  默认即可
