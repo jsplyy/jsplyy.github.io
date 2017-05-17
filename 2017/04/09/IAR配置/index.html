@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>IAR配置 | 凭栏映影</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="jsplyy,嵌入式,MCU,前端,程序员,软件,embedded,program,software" />
+  
+
+  <meta name="description" content="汇编包含头文件1option-&amp;gt;assembler-&amp;gt;Preprocessor Run to main1project-&amp;gt;options-&amp;gt;debugger-&amp;gt;setup 中勾选 run to main 选项 icf文件12 map文件12 ARM中PC和LR的关系 1LR = PC -4 SWI中断12 ARM工作模式1用户模式，FIQ模式，IRQ模式，系统模式，终">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IAR配置">
+<meta property="og:url" content="http://jsplyy.github.io/2017/04/09/IAR配置/index.html">
+<meta property="og:site_name" content="凭栏映影">
+<meta property="og:description" content="汇编包含头文件1option-&amp;gt;assembler-&amp;gt;Preprocessor Run to main1project-&amp;gt;options-&amp;gt;debugger-&amp;gt;setup 中勾选 run to main 选项 icf文件12 map文件12 ARM中PC和LR的关系 1LR = PC -4 SWI中断12 ARM工作模式1用户模式，FIQ模式，IRQ模式，系统模式，终">
+<meta property="og:updated_time" content="2017-04-10T00:15:49.818Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="IAR配置">
+<meta name="twitter:description" content="汇编包含头文件1option-&amp;gt;assembler-&amp;gt;Preprocessor Run to main1project-&amp;gt;options-&amp;gt;debugger-&amp;gt;setup 中勾选 run to main 选项 icf文件12 map文件12 ARM中PC和LR的关系 1LR = PC -4 SWI中断12 ARM工作模式1用户模式，FIQ模式，IRQ模式，系统模式，终">
+
+  
+    <link rel="alternate" href="/atom.xml" title="凭栏映影" type="application/atom+xml">
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbe6" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+
+  
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/atom.xml"
+            rel="noopener noreferrer"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#汇编包含头文件"><span class="toc-text">汇编包含头文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Run-to-main"><span class="toc-text">Run to main</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#icf文件"><span class="toc-text">icf文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#map文件"><span class="toc-text">map文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ARM中PC和LR的关系"><span class="toc-text">ARM中PC和LR的关系 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SWI中断"><span class="toc-text">SWI中断</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ARM工作模式"><span class="toc-text">ARM工作模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IAR-call-graph"><span class="toc-text">IAR call_graph</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#objdump反汇编"><span class="toc-text">objdump反汇编</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SVC指令"><span class="toc-text">SVC指令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输出汇编文件"><span class="toc-text">输出汇编文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#生成call-graph-log-file"><span class="toc-text">生成call graph log file</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#entry-symbol"><span class="toc-text">entry symbol</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-IAR配置" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">IAR配置</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2017.04.09</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>John Doe</span>
+        </span>
+      
+
+      
+
+
+      
+        <span>
+          <i class="icon-comment"></i>
+          <a href="http://www.lujingsai.com/2017/04/09/IAR配置/#disqus_thread"></a>
+        </span>
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h4 id="汇编包含头文件"><a href="#汇编包含头文件" class="headerlink" title="汇编包含头文件"></a>汇编包含头文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">option-&gt;assembler-&gt;Preprocessor</div></pre></td></tr></table></figure>
+<h4 id="Run-to-main"><a href="#Run-to-main" class="headerlink" title="Run to main"></a>Run to main</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">project-&gt;options-&gt;debugger-&gt;setup 中勾选 run to main 选项</div></pre></td></tr></table></figure>
+<h4 id="icf文件"><a href="#icf文件" class="headerlink" title="icf文件"></a>icf文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="map文件"><a href="#map文件" class="headerlink" title="map文件"></a>map文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="ARM中PC和LR的关系"><a href="#ARM中PC和LR的关系" class="headerlink" title="ARM中PC和LR的关系 "></a><a href="http://blog.sina.com.cn/s/blog_932ba3b90101mlh8.html" target="_blank" rel="external">ARM中PC和LR的关系 </a></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">LR = PC -4</div></pre></td></tr></table></figure>
+<h4 id="SWI中断"><a href="#SWI中断" class="headerlink" title="SWI中断"></a>SWI中断</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="ARM工作模式"><a href="#ARM工作模式" class="headerlink" title="ARM工作模式"></a>ARM工作模式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">用户模式，FIQ模式，IRQ模式，系统模式，终止模式，数据访问终止模式，未定义模式</div></pre></td></tr></table></figure>
+<h4 id="IAR-call-graph"><a href="#IAR-call-graph" class="headerlink" title="IAR call_graph"></a>IAR call_graph</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="objdump反汇编"><a href="#objdump反汇编" class="headerlink" title="objdump反汇编"></a>objdump反汇编</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">objdump -f test  显示test的文件头信息</div><div class="line"></div><div class="line">objdump -d test  反汇编test中的需要执行指令的那些section</div><div class="line"></div><div class="line">objdump -D test  与-d类似，但反汇编test中的所有section</div><div class="line"></div><div class="line">objdump -h test  显示test的Section Header信息</div><div class="line"></div><div class="line">objdump -x test  显示test的全部Header信息</div><div class="line"></div><div class="line">objdump -s test  除了显示test的全部Header信息，还显示他们对应的十六进制文件代码</div></pre></td></tr></table></figure>
+<h4 id="SVC指令"><a href="#SVC指令" class="headerlink" title="SVC指令"></a>SVC指令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="输出汇编文件"><a href="#输出汇编文件" class="headerlink" title="输出汇编文件"></a>输出汇编文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Option-&gt;C/C++ Compile-&gt;List-&gt;Output assemble file</div></pre></td></tr></table></figure>
+<h4 id="生成call-graph-log-file"><a href="#生成call-graph-log-file" class="headerlink" title="生成call graph log file"></a>生成call graph log file</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Option-&gt;Linker-&gt;Extra Options-&gt;Command line options:</div><div class="line">--log call_graph</div><div class="line">--log_file log.txt</div></pre></td></tr></table></figure>
+<h4 id="entry-symbol"><a href="#entry-symbol" class="headerlink" title="entry symbol"></a>entry symbol</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Option-&gt;Linker-&gt;Library-&gt;override default program entry-&gt;entry symbol</div></pre></td></tr></table></figure>
+
+    
+  </div>
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持jsplyy</div>
+        <ul class="theme.donation.items.length">
+        
+          <li class="item">
+            <img src="/images/qr-wechat.jpg" alt="">
+          </li>
+        
+          <li class="item">
+            <img src="/images/qr-alipay.jpg" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2017/04/09/ARM指令/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="show pull-right" href="/2017/04/09/sublime-配置/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/atom.xml"
+              rel="noopener noreferrer"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'jsplyy';
+    
+    var disqus_url = 'http://jsplyy.github.io/2017/04/09/IAR配置/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//jsplyy.disqus.com/count.js" async></script>
+
+
+
+    
+
+
+
+
+    
+
+    
+	
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>

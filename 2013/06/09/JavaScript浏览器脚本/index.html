@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>JavaScript浏览器脚本 | 凭栏映影</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="jsplyy,嵌入式,MCU,前端,程序员,软件,embedded,program,software" />
+  
+
+  <meta name="description" content="把网页转换成编辑模式1javascript:document.body.contentEditable=&amp;apos;true&amp;apos;; document.designMode=&amp;apos;on&amp;apos;; void(0); 旋转网页1javascript:window.i=1;setInterval(function()&amp;#123;i++;document.body.style.cssTex">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript浏览器脚本">
+<meta property="og:url" content="http://jsplyy.github.io/2013/06/09/JavaScript浏览器脚本/index.html">
+<meta property="og:site_name" content="凭栏映影">
+<meta property="og:description" content="把网页转换成编辑模式1javascript:document.body.contentEditable=&amp;apos;true&amp;apos;; document.designMode=&amp;apos;on&amp;apos;; void(0); 旋转网页1javascript:window.i=1;setInterval(function()&amp;#123;i++;document.body.style.cssTex">
+<meta property="og:updated_time" content="2017-04-10T00:15:49.818Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JavaScript浏览器脚本">
+<meta name="twitter:description" content="把网页转换成编辑模式1javascript:document.body.contentEditable=&amp;apos;true&amp;apos;; document.designMode=&amp;apos;on&amp;apos;; void(0); 旋转网页1javascript:window.i=1;setInterval(function()&amp;#123;i++;document.body.style.cssTex">
+
+  
+    <link rel="alternate" href="/atom.xml" title="凭栏映影" type="application/atom+xml">
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbe6" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+
+  
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/atom.xml"
+            rel="noopener noreferrer"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#把网页转换成编辑模式"><span class="toc-text">把网页转换成编辑模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#旋转网页"><span class="toc-text">旋转网页</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#不显示图片"><span class="toc-text">不显示图片</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#显示网页中非图片元素"><span class="toc-text">显示网页中非图片元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解除复制限制"><span class="toc-text">解除复制限制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解除网页中的一些禁止功能-如复制-粘贴，右键等"><span class="toc-text">解除网页中的一些禁止功能 如复制/粘贴，右键等</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#密码框密文变明文–无效–待修改"><span class="toc-text">密码框密文变明文–无效–待修改</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#查看网站更新时间"><span class="toc-text">查看网站更新时间</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-JavaScript浏览器脚本" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">JavaScript浏览器脚本</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2013.06.09</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>John Doe</span>
+        </span>
+      
+
+      
+
+
+      
+        <span>
+          <i class="icon-comment"></i>
+          <a href="http://www.lujingsai.com/2013/06/09/JavaScript浏览器脚本/#disqus_thread"></a>
+        </span>
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h4 id="把网页转换成编辑模式"><a href="#把网页转换成编辑模式" class="headerlink" title="把网页转换成编辑模式"></a>把网页转换成编辑模式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">javascript:document.body.contentEditable=&apos;true&apos;; document.designMode=&apos;on&apos;; void(0);</div></pre></td></tr></table></figure>
+<h4 id="旋转网页"><a href="#旋转网页" class="headerlink" title="旋转网页"></a>旋转网页</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">javascript:window.i=1;setInterval(function()&#123;i++;document.body.style.cssText+=&quot;-webkit-transform: rotate(-&quot;+i+&quot;deg);-moz-transform: rotate(-&quot;+i+&quot;deg)&quot;;&#125;,100);void(0);</div></pre></td></tr></table></figure>
+<h4 id="不显示图片"><a href="#不显示图片" class="headerlink" title="不显示图片"></a>不显示图片</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">jannick=&apos;&apos;;for%20(i7M1bQz=0;i7M1bQz&lt;document.images.length;i7M1bQz++)&#123;jannick+=&apos;&lt;img%20src=&apos;+document.images[i7M1bQz].src+&apos;&gt;&lt;br&gt;&apos;&#125;;if(jannick!=&apos;&apos;)&#123;document.write(&apos;&lt;center&gt;&apos;+jannick+&apos;&lt;/center&gt;&apos;);void(document.close())&#125;else&#123;alert(&apos;No%20images!&apos;)&#125;</div></pre></td></tr></table></figure>
+<h4 id="显示网页中非图片元素"><a href="#显示网页中非图片元素" class="headerlink" title="显示网页中非图片元素"></a>显示网页中非图片元素</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">for(jannick=0;jannick&lt;document.images.length;jannick++)&#123;void(document.images[jannick].style.visibility=&apos;hidden&apos;)&#125;</div></pre></td></tr></table></figure>
+<h4 id="解除复制限制"><a href="#解除复制限制" class="headerlink" title="解除复制限制"></a>解除复制限制</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">with(document.body)&#123;oncontextmenu=&apos;&apos;;ondragstart=&apos;&apos;;onselectstart=&apos;&apos;;onselect=&apos;&apos;;oncopy=&apos;&apos;;onbeforecopy=&apos;&apos;;onmouseup=&apos;&apos;;&#125;void(0);</div></pre></td></tr></table></figure>
+<h4 id="解除网页中的一些禁止功能-如复制-粘贴，右键等"><a href="#解除网页中的一些禁止功能-如复制-粘贴，右键等" class="headerlink" title="解除网页中的一些禁止功能 如复制/粘贴，右键等"></a>解除网页中的一些禁止功能 如复制/粘贴，右键等</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">javascript&lt;img src=&quot;static/image/smiley/default/sad.gif&quot; border=&quot;0&quot; smilieid=&quot;2&quot; alt=&quot;:(&quot;&gt;function(e,f,w,d,b,i)&#123;for(i=0;i&lt;e.length;)(t=e,w=d=b=f);&#125;)([&apos;onmousedown&apos;,&apos;onmouseup&apos;,&apos;onmousemove&apos;,&apos;ondblclick&apos;,&apos;onclick&apos;,&apos;oncontextmenu&apos;,&apos;onmousewheel&apos;,&apos;onselectstart&apos;,&apos;oncopy&apos;,&apos;onkeydown&apos;,&apos;onkeypress&apos;,&apos;onkeyup&apos;],new Function,window,document,document.body);</div></pre></td></tr></table></figure>
+<h4 id="密码框密文变明文–无效–待修改"><a href="#密码框密文变明文–无效–待修改" class="headerlink" title="密码框密文变明文–无效–待修改"></a>密码框密文变明文–无效–待修改</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(function()&#123;var s,F,j,f,i;s=&quot;&quot;;F=document.forms;for(j=0;j&lt;F.length;++j)&#123;f=F;for(i=0;i&lt;f.length;++i)&#123;if(f.type.toLowerCase()==&quot;password&quot;)s+=f.value+&quot;\n&quot;;&#125;&#125;if(s)alert(&quot;Passwords in forms on this page:\n\n&quot;+s);else alert(&quot;There are no passwords in forms on this page.&quot;);&#125;)();</div></pre></td></tr></table></figure>
+<h4 id="查看网站更新时间"><a href="#查看网站更新时间" class="headerlink" title="查看网站更新时间"></a>查看网站更新时间</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">javascript:alert(document.lastModified)</div></pre></td></tr></table></figure>
+
+    
+  </div>
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持jsplyy</div>
+        <ul class="theme.donation.items.length">
+        
+          <li class="item">
+            <img src="/images/qr-wechat.jpg" alt="">
+          </li>
+        
+          <li class="item">
+            <img src="/images/qr-alipay.jpg" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2014/06/09/Nginx源码安装/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="hide pull-right" href="/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/atom.xml"
+              rel="noopener noreferrer"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'jsplyy';
+    
+    var disqus_url = 'http://jsplyy.github.io/2013/06/09/JavaScript浏览器脚本/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//jsplyy.disqus.com/count.js" async></script>
+
+
+
+    
+
+
+
+
+    
+
+    
+	
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>

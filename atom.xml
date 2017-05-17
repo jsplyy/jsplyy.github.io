@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>凭栏映影</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://jsplyy.github.io/"/>
+  <updated>2017-05-17T16:31:23.571Z</updated>
+  <id>http://jsplyy.github.io/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>link</title>
+    <link href="http://jsplyy.github.io/2017/05/18/link/"/>
+    <id>http://jsplyy.github.io/2017/05/18/link/</id>
+    <published>2017-05-17T16:31:23.000Z</published>
+    <updated>2017-05-17T16:31:23.571Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>keil命令行下载程序</title>
+    <link href="http://jsplyy.github.io/2017/04/09/keil%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8B%E8%BD%BD%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://jsplyy.github.io/2017/04/09/keil命令行下载程序/</id>
+    <published>2017-04-09T14:19:19.000Z</published>
+    <updated>2017-05-17T17:55:43.508Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">UV4.exe -f Programming.UVPROJ -o Prg_Output.txt</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;lin
+    
+    </summary>
+    
+      <category term="工具" scheme="http://jsplyy.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="keil" scheme="http://jsplyy.github.io/tags/keil/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>windows常用命令</title>
+    <link href="http://jsplyy.github.io/2017/04/09/windows%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://jsplyy.github.io/2017/04/09/windows常用命令/</id>
+    <published>2017-04-09T14:18:48.000Z</published>
+    <updated>2017-04-10T00:15:49.818Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="注册动态链接库命令"><a href="#注册动态链接库命令" class="headerlink" title="注册动态链接库命令"></a>注册动态链接库命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">regsvr32</div></pre></td></tr></table></figure>
+<h4 id="打开计算机管理"><a href="#打开计算机管理" class="headerlink" title="打开计算机管理"></a>打开计算机管理</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">compmgmt.msc</div></pre></td></tr></table></figure>
+<h4 id="打开设备管理器"><a href="#打开设备管理器" class="headerlink" title="打开设备管理器"></a>打开设备管理器</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">devmgmt.msc</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;注册动态链接库命令&quot;&gt;&lt;a href=&quot;#注册动态链接库命令&quot; class=&quot;headerlink&quot; title=&quot;注册动态链接库命令&quot;&gt;&lt;/a&gt;注册动态链接库命令&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;t
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>DNS相关问题</title>
+    <link href="http://jsplyy.github.io/2017/04/09/DNS%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/"/>
+    <id>http://jsplyy.github.io/2017/04/09/DNS相关问题/</id>
+    <published>2017-04-09T14:17:46.000Z</published>
+    <updated>2017-04-10T00:15:49.818Z</updated>
+    
+    <content type="html"><![CDATA[<p>查找域名指向IP<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nslookup www.baidu.com</div></pre></td></tr></table></figure></p>
+<p>刷新本地DNS<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ipconfig/flushdns</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;查找域名指向IP&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>文件权限管理</title>
+    <link href="http://jsplyy.github.io/2017/04/09/%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"/>
+    <id>http://jsplyy.github.io/2017/04/09/文件权限管理/</id>
+    <published>2017-04-09T14:17:09.000Z</published>
+    <updated>2017-04-10T00:15:49.828Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="改变单个文件权限"><a href="#改变单个文件权限" class="headerlink" title="改变单个文件权限"></a>改变单个文件权限</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chmod 777 filename</div></pre></td></tr></table></figure>
+<h4 id="目录权限说明"><a href="#目录权限说明" class="headerlink" title="目录权限说明"></a>目录权限说明</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">对于目录来说，执行位的作用是控制能否进入或者通过该目录，而不是控制能否列出它的内容。读取位和执行位的组合的作用才是控制是否列出目录中的内容。写入位和执行位的组合则是允许在目录中创建，删除，和重命名文件。</div></pre></td></tr></table></figure>
+<h4 id="递归改变目录及目录文件权限"><a href="#递归改变目录及目录文件权限" class="headerlink" title="递归改变目录及目录文件权限"></a>递归改变目录及目录文件权限</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chmod -R dirname</div></pre></td></tr></table></figure>
+<h4 id="递归改变文件属主"><a href="#递归改变文件属主" class="headerlink" title="递归改变文件属主"></a>递归改变文件属主</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chown -R dirname</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;改变单个文件权限&quot;&gt;&lt;a href=&quot;#改变单个文件权限&quot; class=&quot;headerlink&quot; title=&quot;改变单个文件权限&quot;&gt;&lt;/a&gt;改变单个文件权限&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cl
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ARM指令</title>
+    <link href="http://jsplyy.github.io/2017/04/09/ARM%E6%8C%87%E4%BB%A4/"/>
+    <id>http://jsplyy.github.io/2017/04/09/ARM指令/</id>
+    <published>2017-04-09T14:15:18.000Z</published>
+    <updated>2017-04-10T00:15:49.818Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="WFI"><a href="#WFI" class="headerlink" title="__WFI"></a>__WFI</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="MSR-MRS指令详解"><a href="#MSR-MRS指令详解" class="headerlink" title="MSR MRS指令详解"></a><a href="http://blog.csdn.net/wavemcu/article/details/6737302" target="_blank" rel="external">MSR MRS指令详解</a></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">MSR = Move to Register from State register</div><div class="line">MSR     PSP,R0</div><div class="line">MRS     R0,PSP</div></pre></td></tr></table></figure>
+<h4 id="PenSV"><a href="#PenSV" class="headerlink" title="PenSV"></a>PenSV</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="CPSID-CPISE"><a href="#CPSID-CPISE" class="headerlink" title="CPSID CPISE"></a>CPSID CPISE</h4><h4 id="CPS指令"><a href="#CPS指令" class="headerlink" title="CPS指令"></a>CPS指令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">CPSID   I   ;PRIMASK=1;关中断 </div><div class="line">CPSIE   I   ;PRIMASK=0;开中断</div><div class="line">CPSID   F   ;FAULTMASK=1;关异常</div><div class="line">CPSIE   F   ;FAULTMASK=0;开异常</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;WFI&quot;&gt;&lt;a href=&quot;#WFI&quot; class=&quot;headerlink&quot; title=&quot;__WFI&quot;&gt;&lt;/a&gt;__WFI&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>IAR配置</title>
+    <link href="http://jsplyy.github.io/2017/04/09/IAR%E9%85%8D%E7%BD%AE/"/>
+    <id>http://jsplyy.github.io/2017/04/09/IAR配置/</id>
+    <published>2017-04-09T14:14:53.000Z</published>
+    <updated>2017-04-10T00:15:49.818Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="汇编包含头文件"><a href="#汇编包含头文件" class="headerlink" title="汇编包含头文件"></a>汇编包含头文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">option-&gt;assembler-&gt;Preprocessor</div></pre></td></tr></table></figure>
+<h4 id="Run-to-main"><a href="#Run-to-main" class="headerlink" title="Run to main"></a>Run to main</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">project-&gt;options-&gt;debugger-&gt;setup 中勾选 run to main 选项</div></pre></td></tr></table></figure>
+<h4 id="icf文件"><a href="#icf文件" class="headerlink" title="icf文件"></a>icf文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="map文件"><a href="#map文件" class="headerlink" title="map文件"></a>map文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="ARM中PC和LR的关系"><a href="#ARM中PC和LR的关系" class="headerlink" title="ARM中PC和LR的关系 "></a><a href="http://blog.sina.com.cn/s/blog_932ba3b90101mlh8.html" target="_blank" rel="external">ARM中PC和LR的关系 </a></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">LR = PC -4</div></pre></td></tr></table></figure>
+<h4 id="SWI中断"><a href="#SWI中断" class="headerlink" title="SWI中断"></a>SWI中断</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="ARM工作模式"><a href="#ARM工作模式" class="headerlink" title="ARM工作模式"></a>ARM工作模式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">用户模式，FIQ模式，IRQ模式，系统模式，终止模式，数据访问终止模式，未定义模式</div></pre></td></tr></table></figure>
+<h4 id="IAR-call-graph"><a href="#IAR-call-graph" class="headerlink" title="IAR call_graph"></a>IAR call_graph</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="objdump反汇编"><a href="#objdump反汇编" class="headerlink" title="objdump反汇编"></a>objdump反汇编</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">objdump -f test  显示test的文件头信息</div><div class="line"></div><div class="line">objdump -d test  反汇编test中的需要执行指令的那些section</div><div class="line"></div><div class="line">objdump -D test  与-d类似，但反汇编test中的所有section</div><div class="line"></div><div class="line">objdump -h test  显示test的Section Header信息</div><div class="line"></div><div class="line">objdump -x test  显示test的全部Header信息</div><div class="line"></div><div class="line">objdump -s test  除了显示test的全部Header信息，还显示他们对应的十六进制文件代码</div></pre></td></tr></table></figure>
+<h4 id="SVC指令"><a href="#SVC指令" class="headerlink" title="SVC指令"></a>SVC指令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="输出汇编文件"><a href="#输出汇编文件" class="headerlink" title="输出汇编文件"></a>输出汇编文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Option-&gt;C/C++ Compile-&gt;List-&gt;Output assemble file</div></pre></td></tr></table></figure>
+<h4 id="生成call-graph-log-file"><a href="#生成call-graph-log-file" class="headerlink" title="生成call graph log file"></a>生成call graph log file</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Option-&gt;Linker-&gt;Extra Options-&gt;Command line options:</div><div class="line">--log call_graph</div><div class="line">--log_file log.txt</div></pre></td></tr></table></figure>
+<h4 id="entry-symbol"><a href="#entry-symbol" class="headerlink" title="entry symbol"></a>entry symbol</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Option-&gt;Linker-&gt;Library-&gt;override default program entry-&gt;entry symbol</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;汇编包含头文件&quot;&gt;&lt;a href=&quot;#汇编包含头文件&quot; class=&quot;headerlink&quot; title=&quot;汇编包含头文件&quot;&gt;&lt;/a&gt;汇编包含头文件&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>sublime 配置</title>
+    <link href="http://jsplyy.github.io/2017/04/09/sublime-%E9%85%8D%E7%BD%AE/"/>
+    <id>http://jsplyy.github.io/2017/04/09/sublime-配置/</id>
+    <published>2017-04-09T14:13:21.000Z</published>
+    <updated>2017-04-10T00:15:49.818Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="添加ctags快捷键"><a href="#添加ctags快捷键" class="headerlink" title="添加ctags快捷键"></a>添加ctags快捷键</h3><p>ctags -R -f .tags<br>Preferences -&gt; Key Bindings -&gt; Users  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[  </div><div class="line">    &#123;&quot;command&quot;: &quot;navigate_to_definition&quot;,&quot;keys&quot;: [&quot;f12&quot;]&#125;, </div><div class="line">    &#123;&quot;command&quot;: &quot;jump_prev&quot;,&quot;keys&quot;: [&quot;f8&quot;]&#125;</div><div class="line">]</div></pre></td></tr></table></figure>
+<h3 id="修改TAB键为缩进为四个空格"><a href="#修改TAB键为缩进为四个空格" class="headerlink" title="修改TAB键为缩进为四个空格"></a>修改TAB键为缩进为四个空格</h3><p>Preferences -&gt; Settings -&gt; Users<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    // 注意只有一个大括号，如果之前有属性，如在之前的属性前确保有 ，(逗号)</div><div class="line">    &quot;tab_size&quot;: 4,</div><div class="line">    &quot;translate_tabs_to_spaces&quot;: true, </div><div class="line">    //若要在保存时自动把tab 转换成空格，请把下面一行设置成 true，如不需要: 设置成 false</div><div class="line">    &quot;expand_tabs_on_save&quot;: true</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;添加ctags快捷键&quot;&gt;&lt;a href=&quot;#添加ctags快捷键&quot; class=&quot;headerlink&quot; title=&quot;添加ctags快捷键&quot;&gt;&lt;/a&gt;添加ctags快捷键&lt;/h3&gt;&lt;p&gt;ctags -R -f .tags&lt;br&gt;Preferences -&amp;gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python基础学习</title>
+    <link href="http://jsplyy.github.io/2017/04/09/Python%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://jsplyy.github.io/2017/04/09/Python基础学习/</id>
+    <published>2017-04-09T14:01:27.000Z</published>
+    <updated>2017-04-10T00:15:49.818Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="附Python基础"><a href="#附Python基础" class="headerlink" title="附Python基础"></a>附Python基础</h3><hr>
+<p><a href="http://product.dangdang.com/23473514.html" target="_blank" rel="external">Python基础教程(第2版·修订版)</a><br><a href="http://product.dangdang.com/23594855.html" target="_blank" rel="external">“笨办法”学Python(第3版)</a><br><a href="http://product.dangdang.com/20255354.html" target="_blank" rel="external">Python核心编程（第二版</a>  </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;附Python基础&quot;&gt;&lt;a href=&quot;#附Python基础&quot; class=&quot;headerlink&quot; title=&quot;附Python基础&quot;&gt;&lt;/a&gt;附Python基础&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;http://product.dangdang.com/
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Web前端学习</title>
+    <link href="http://jsplyy.github.io/2017/04/09/Web%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://jsplyy.github.io/2017/04/09/Web前端学习/</id>
+    <published>2017-04-09T13:34:33.000Z</published>
+    <updated>2017-04-10T00:15:49.818Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="进阶步骤"><a href="#进阶步骤" class="headerlink" title="进阶步骤"></a>进阶步骤</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">首先学习HTML标签语法</div><div class="line"></div><div class="line">学习css对网页元素样式进行设计</div><div class="line"></div><div class="line">学习javascript设计交互式网页</div><div class="line"></div><div class="line">每一部分都要多做练习</div></pre></td></tr></table></figure>
+<h3 id="学习网站"><a href="#学习网站" class="headerlink" title="学习网站"></a>学习网站</h3><hr>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/" target="_blank" rel="external">Web technology for developers</a><br><a href="http://www.w3school.com.cn/" target="_blank" rel="external">W3School中文教程</a><br><a href="https://www.w3schools.com/default.asp" target="_blank" rel="external">W3School</a><br><a href="http://www.runoob.com/" target="_blank" rel="external">菜鸟教程</a></p>
+<h3 id="参考书籍"><a href="#参考书籍" class="headerlink" title="参考书籍"></a>参考书籍</h3><hr>
+<p><a href="http://product.dangdang.com/24003308.html" target="_blank" rel="external">HTML CSS JavaScript 网页制作从入门到精通 第3版</a><br><a href="http://product.dangdang.com/23348110.html" target="_blank" rel="external">Head First HTML 与 CSS（第二版</a><br><a href="http://product.dangdang.com/21049601.html#ddclick_reco_product_alsobuy" target="_blank" rel="external">JavaScript DOM编程艺术(第2版)</a><br><a href="http://product.dangdang.com/22628333.html#ddclick_reco_reco_buytogether" target="_blank" rel="external">JavaScript高级程序设计(第3版)</a><br><a href="http://product.dangdang.com/22786088.html#ddclick_reco_product_alsobuy" target="_blank" rel="external">锋利的jQuery(第2版)</a><br><a href="http://product.dangdang.com/22872884.html" target="_blank" rel="external">JavaScript语言精粹</a><br><a href="http://product.dangdang.com/22806937.html" target="_blank" rel="external">CSS禅意花园</a><br><a href="http://product.dangdang.com/20050535.html" target="_blank" rel="external">CSS权威指南</a>  </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;进阶步骤&quot;&gt;&lt;a href=&quot;#进阶步骤&quot; class=&quot;headerlink&quot; title=&quot;进阶步骤&quot;&gt;&lt;/a&gt;进阶步骤&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://jsplyy.github.io/2017/04/09/hello-world/"/>
+    <id>http://jsplyy.github.io/2017/04/09/hello-world/</id>
+    <published>2017-04-09T06:08:20.510Z</published>
+    <updated>2017-04-09T06:08:20.510Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">auto generate</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;auto generate&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo配置记录</title>
+    <link href="http://jsplyy.github.io/2017/04/09/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>http://jsplyy.github.io/2017/04/09/hexo使用记录/</id>
+    <published>2017-04-09T06:08:20.510Z</published>
+    <updated>2017-04-09T06:08:20.510Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">type: git #注意,这边是git不是github,hexo 3.0以后就要求使用git,不然会出现deploy失败情况.  </div><div class="line">repo: git@github.com:Helloxyw/Helloxyw.github.io.git  </div><div class="line">branch: master</div><div class="line"></div><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<h3 id="换maupassant主题"><a href="#换maupassant主题" class="headerlink" title="换maupassant主题"></a>换maupassant主题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</div><div class="line"></div><div class="line">$ npm install hexo-renderer-jade --save</div><div class="line">$ npm install hexo-renderer-sass --save</div></pre></td></tr></table></figure>
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo d/deploy</div><div class="line"></div><div class="line">hexo d -g</div><div class="line"></div><div class="line">hexo s/server</div></pre></td></tr></table></figure>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">安装node.js</div><div class="line"></div><div class="line">设置npm镜像--</div><div class="line">npm config set registry &quot;https://registry.npm.taobao.org&quot;</div><div class="line"></div><div class="line">配置git</div><div class="line">git config --global user.name &quot;你的GitHub用户名&quot;</div><div class="line">git config --global user.email &quot;你的GitHub注册邮箱&quot;</div><div class="line">ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</div><div class="line"></div><div class="line">安装hexo</div><div class="line">npm install hexo / npm install hexo-cli g</div><div class="line">hexo init blog</div><div class="line">cd blog</div><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<h3 id="git同时push到多个仓库-oschina-github-coding"><a href="#git同时push到多个仓库-oschina-github-coding" class="headerlink" title="git同时push到多个仓库 oschina github coding"></a>git同时push到多个仓库 oschina github coding</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git remote add &lt;主机名&gt; &lt;网址&gt;</div><div class="line">$ git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</div><div class="line">$ git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>zprotect加密exe一机一码方法</title>
+    <link href="http://jsplyy.github.io/2014/07/09/zprotect%E5%8A%A0%E5%AF%86exe%E4%B8%80%E6%9C%BA%E4%B8%80%E7%A0%81%E6%96%B9%E6%B3%95/"/>
+    <id>http://jsplyy.github.io/2014/07/09/zprotect加密exe一机一码方法/</id>
+    <published>2014-07-09T14:12:09.000Z</published>
+    <updated>2017-04-10T00:15:49.828Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="文件信息"><a href="#文件信息" class="headerlink" title="文件信息"></a>文件信息</h4><h4 id="程序设置-背景音乐关闭"><a href="#程序设置-背景音乐关闭" class="headerlink" title="程序设置-背景音乐关闭"></a>程序设置-背景音乐关闭</h4><h4 id="试用控制-启用授权功能-机器码-key-软件需要密钥才能运行"><a href="#试用控制-启用授权功能-机器码-key-软件需要密钥才能运行" class="headerlink" title="试用控制-启用授权功能-机器码+key-软件需要密钥才能运行"></a>试用控制-启用授权功能-机器码+key-软件需要密钥才能运行</h4><h4 id="试用控制-网页地址"><a href="#试用控制-网页地址" class="headerlink" title="试用控制-网页地址"></a>试用控制-网页地址</h4><h4 id="生成并保存密钥因子"><a href="#生成并保存密钥因子" class="headerlink" title="生成并保存密钥因子"></a>生成并保存密钥因子</h4><h4 id="立即保护"><a href="#立即保护" class="headerlink" title="立即保护"></a>立即保护</h4><hr>
+<h4 id="计算密钥"><a href="#计算密钥" class="headerlink" title="计算密钥"></a>计算密钥</h4><hr>
+<h4 id="软件需要密钥才能运行"><a href="#软件需要密钥才能运行" class="headerlink" title="软件需要密钥才能运行"></a>软件需要密钥才能运行</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">强制软件必须注册后才可以运行，即使设置了试用运行方式，也必须注册使用。</div></pre></td></tr></table></figure>
+<h4 id="试用限制"><a href="#试用限制" class="headerlink" title="试用限制"></a>试用限制</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">可以选择试用次数、试用天数或试用日期等多种不同类型的组合</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;文件信息&quot;&gt;&lt;a href=&quot;#文件信息&quot; class=&quot;headerlink&quot; title=&quot;文件信息&quot;&gt;&lt;/a&gt;文件信息&lt;/h4&gt;&lt;h4 id=&quot;程序设置-背景音乐关闭&quot;&gt;&lt;a href=&quot;#程序设置-背景音乐关闭&quot; class=&quot;headerlink&quot; ti
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx配置SSL实现Https访问</title>
+    <link href="http://jsplyy.github.io/2014/07/09/Nginx%E9%85%8D%E7%BD%AESSL%E5%AE%9E%E7%8E%B0Https%E8%AE%BF%E9%97%AE/"/>
+    <id>http://jsplyy.github.io/2014/07/09/Nginx配置SSL实现Https访问/</id>
+    <published>2014-07-09T14:11:23.000Z</published>
+    <updated>2017-04-10T00:15:49.818Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="生成根密钥"><a href="#生成根密钥" class="headerlink" title="生成根密钥"></a>生成根密钥</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">openssl genrsa -out ca.key 2048</div><div class="line">/</div><div class="line">openssl genrsa -out cakey.pem 2048</div></pre></td></tr></table></figure>
+<h4 id="生成根证书"><a href="#生成根证书" class="headerlink" title="生成根证书"></a>生成根证书</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">openssl req -new -x509 -key ca.key -out ca.cert</div><div class="line">/</div><div class="line">openssl req -new -x509 -key cakey.pem -out cacert.pem</div></pre></td></tr></table></figure>
+<h4 id="生成服务器密钥"><a href="#生成服务器密钥" class="headerlink" title="生成服务器密钥"></a>生成服务器密钥</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">openssl genrsa -out server.key 2048</div><div class="line">/</div><div class="line">openssl genrsa -out server.pem 2048</div></pre></td></tr></table></figure>
+<h4 id="生成服务器请求"><a href="#生成服务器请求" class="headerlink" title="生成服务器请求"></a>生成服务器请求</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">openssl req -new -key server.key -out server.csr</div><div class="line">/</div><div class="line">openssl req -new -key server.pem -out server.pem</div><div class="line"></div><div class="line">执行上述命令后，需要输入信息。输入的信息中最重要的为 Common Name，这里输入的域名即为我们要使用https访问的域名。</div><div class="line"></div><div class="line">127.0.0.1</div><div class="line">/</div><div class="line">localhost</div><div class="line">/</div><div class="line">iotcent.org</div></pre></td></tr></table></figure>
+<h4 id="私有CA根据请求来签署证书"><a href="#私有CA根据请求来签署证书" class="headerlink" title="私有CA根据请求来签署证书"></a>私有CA根据请求来签署证书</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># 默认openssl配置</div><div class="line">openssl ca -in server.csr -out server.crt</div><div class="line">/</div><div class="line">openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt</div></pre></td></tr></table></figure>
+<h4 id="Linux添加根证书"><a href="#Linux添加根证书" class="headerlink" title="Linux添加根证书"></a>Linux添加根证书</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h4 id="nginx配置"><a href="#nginx配置" class="headerlink" title="nginx配置"></a>nginx配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">必选：</div><div class="line">listen 127.0.0.1:443;</div><div class="line">ssl on;</div><div class="line">ssl_certificate ../ssl_crt/server.crt;</div><div class="line">ssl_certificate_key ../ssl_crt/server.key;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">可选：</div><div class="line">#客户端能够重复使用存储在缓存中的会话参数时间 </div><div class="line">ssl_session_timeout 5m; </div><div class="line">#指定使用的ssl协议  </div><div class="line">ssl_protocols SSLv3 TLSv1;  </div><div class="line">#指定许可的密码描述 </div><div class="line">ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP;  </div><div class="line">#SSLv3和TLSv1协议的服务器密码需求优先级高于客户端密码 </div><div class="line">ssl_prefer_server_ciphers  on;</div></pre></td></tr></table></figure>
+<hr>
+<h4 id="内容参考："><a href="#内容参考：" class="headerlink" title="内容参考："></a>内容参考：</h4><p><a href="https://segmentfault.com/a/1190000002569859" target="_blank" rel="external">基于OpenSSL自建CA和颁发SSL证书</a><br><a href="http://www.cnblogs.com/developer-ios/p/6074665.html" target="_blank" rel="external">Windows下Nginx配置SSL实现Https访问</a>  </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;生成根密钥&quot;&gt;&lt;a href=&quot;#生成根密钥&quot; class=&quot;headerlink&quot; title=&quot;生成根密钥&quot;&gt;&lt;/a&gt;生成根密钥&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx源码安装</title>
+    <link href="http://jsplyy.github.io/2014/06/09/Nginx%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/"/>
+    <id>http://jsplyy.github.io/2014/06/09/Nginx源码安装/</id>
+    <published>2014-06-09T14:09:20.000Z</published>
+    <updated>2017-04-10T00:15:49.818Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="nginx-源码安装"><a href="#nginx-源码安装" class="headerlink" title="nginx 源码安装"></a>nginx 源码安装</h2><h4 id="configure参数"><a href="#configure参数" class="headerlink" title="configure参数"></a>configure参数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">./configure --user=nginx --group=nginx --prefix=/usr/local/nginx --with-http_ssl_module --add-module=../ngx_cache_purge-2.3 --with-pcre=/home/ubuntu/nginx_source/pcre-8.40 --with-zlib=/home/ubuntu/nginx_source/zlib-1.2.11 --with-http_stub_status_module --with-threads --with-http_sub_module --with-http_flv_module --with-http_gzip_static_module</div></pre></td></tr></table></figure>
+<h4 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo make &amp;&amp; sudo make install</div></pre></td></tr></table></figure>
+<h2 id="nginx常用命令"><a href="#nginx常用命令" class="headerlink" title="nginx常用命令"></a>nginx常用命令</h2><h4 id="启动nginx"><a href="#启动nginx" class="headerlink" title="启动nginx"></a>启动nginx</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">./nginx                          :正常启动</div><div class="line"></div><div class="line">nginx -c /path/to/nginx.conf     ：指定配置文件</div><div class="line"></div><div class="line">kill -HUP 主进程号               ：平滑重启</div></pre></td></tr></table></figure>
+<h4 id="关闭nginx"><a href="#关闭nginx" class="headerlink" title="关闭nginx"></a>关闭nginx</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">nginx -s stop  :快速停止nginx</div><div class="line">         quit  ：完整有序的停止nginx</div><div class="line"></div><div class="line">ps -ef | grep nginx</div><div class="line"></div><div class="line">kill -QUIT 主进程号     ：从容停止Nginx</div><div class="line">kill -TERM 主进程号     ：快速停止Nginx</div><div class="line">pkill -9 nginx          ：强制停止Nginx</div></pre></td></tr></table></figure>
+<h4 id="查看nginx配置文件路径"><a href="#查看nginx配置文件路径" class="headerlink" title="查看nginx配置文件路径"></a>查看nginx配置文件路径</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ./nginx -t</div></pre></td></tr></table></figure>
+<h4 id="查看nginx版本信息"><a href="#查看nginx版本信息" class="headerlink" title="查看nginx版本信息"></a>查看nginx版本信息</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ./nginx -V</div></pre></td></tr></table></figure>
+<h4 id="修改配置后重新加载生效"><a href="#修改配置后重新加载生效" class="headerlink" title="修改配置后重新加载生效"></a>修改配置后重新加载生效</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nginx -s reload</div></pre></td></tr></table></figure>
+<h2 id="nginx-配置"><a href="#nginx-配置" class="headerlink" title="nginx 配置"></a>nginx 配置</h2><h4 id="重定向缓存"><a href="#重定向缓存" class="headerlink" title="重定向缓存"></a>重定向缓存</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rewrite 重定向，浏览器会缓存301永久重定向</div></pre></td></tr></table></figure>
+<h4 id="nginx配置location总结及rewrite规则写法"><a href="#nginx配置location总结及rewrite规则写法" class="headerlink" title="nginx配置location总结及rewrite规则写法"></a><a href="https://segmentfault.com/a/1190000002797606" target="_blank" rel="external">nginx配置location总结及rewrite规则写法</a></h4><h4 id="反向代理配置-代理百度谷歌"><a href="#反向代理配置-代理百度谷歌" class="headerlink" title="反向代理配置 代理百度谷歌"></a>反向代理配置 代理百度谷歌</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">proxy_pass</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ngx_http_google_filter_module</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;nginx-源码安装&quot;&gt;&lt;a href=&quot;#nginx-源码安装&quot; class=&quot;headerlink&quot; title=&quot;nginx 源码安装&quot;&gt;&lt;/a&gt;nginx 源码安装&lt;/h2&gt;&lt;h4 id=&quot;configure参数&quot;&gt;&lt;a href=&quot;#configure参
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript浏览器脚本</title>
+    <link href="http://jsplyy.github.io/2013/06/09/JavaScript%E6%B5%8F%E8%A7%88%E5%99%A8%E8%84%9A%E6%9C%AC/"/>
+    <id>http://jsplyy.github.io/2013/06/09/JavaScript浏览器脚本/</id>
+    <published>2013-06-09T14:06:44.000Z</published>
+    <updated>2017-04-10T00:15:49.818Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="把网页转换成编辑模式"><a href="#把网页转换成编辑模式" class="headerlink" title="把网页转换成编辑模式"></a>把网页转换成编辑模式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">javascript:document.body.contentEditable=&apos;true&apos;; document.designMode=&apos;on&apos;; void(0);</div></pre></td></tr></table></figure>
+<h4 id="旋转网页"><a href="#旋转网页" class="headerlink" title="旋转网页"></a>旋转网页</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">javascript:window.i=1;setInterval(function()&#123;i++;document.body.style.cssText+=&quot;-webkit-transform: rotate(-&quot;+i+&quot;deg);-moz-transform: rotate(-&quot;+i+&quot;deg)&quot;;&#125;,100);void(0);</div></pre></td></tr></table></figure>
+<h4 id="不显示图片"><a href="#不显示图片" class="headerlink" title="不显示图片"></a>不显示图片</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">jannick=&apos;&apos;;for%20(i7M1bQz=0;i7M1bQz&lt;document.images.length;i7M1bQz++)&#123;jannick+=&apos;&lt;img%20src=&apos;+document.images[i7M1bQz].src+&apos;&gt;&lt;br&gt;&apos;&#125;;if(jannick!=&apos;&apos;)&#123;document.write(&apos;&lt;center&gt;&apos;+jannick+&apos;&lt;/center&gt;&apos;);void(document.close())&#125;else&#123;alert(&apos;No%20images!&apos;)&#125;</div></pre></td></tr></table></figure>
+<h4 id="显示网页中非图片元素"><a href="#显示网页中非图片元素" class="headerlink" title="显示网页中非图片元素"></a>显示网页中非图片元素</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">for(jannick=0;jannick&lt;document.images.length;jannick++)&#123;void(document.images[jannick].style.visibility=&apos;hidden&apos;)&#125;</div></pre></td></tr></table></figure>
+<h4 id="解除复制限制"><a href="#解除复制限制" class="headerlink" title="解除复制限制"></a>解除复制限制</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">with(document.body)&#123;oncontextmenu=&apos;&apos;;ondragstart=&apos;&apos;;onselectstart=&apos;&apos;;onselect=&apos;&apos;;oncopy=&apos;&apos;;onbeforecopy=&apos;&apos;;onmouseup=&apos;&apos;;&#125;void(0);</div></pre></td></tr></table></figure>
+<h4 id="解除网页中的一些禁止功能-如复制-粘贴，右键等"><a href="#解除网页中的一些禁止功能-如复制-粘贴，右键等" class="headerlink" title="解除网页中的一些禁止功能 如复制/粘贴，右键等"></a>解除网页中的一些禁止功能 如复制/粘贴，右键等</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">javascript&lt;img src=&quot;static/image/smiley/default/sad.gif&quot; border=&quot;0&quot; smilieid=&quot;2&quot; alt=&quot;:(&quot;&gt;function(e,f,w,d,b,i)&#123;for(i=0;i&lt;e.length;)(t=e,w=d=b=f);&#125;)([&apos;onmousedown&apos;,&apos;onmouseup&apos;,&apos;onmousemove&apos;,&apos;ondblclick&apos;,&apos;onclick&apos;,&apos;oncontextmenu&apos;,&apos;onmousewheel&apos;,&apos;onselectstart&apos;,&apos;oncopy&apos;,&apos;onkeydown&apos;,&apos;onkeypress&apos;,&apos;onkeyup&apos;],new Function,window,document,document.body);</div></pre></td></tr></table></figure>
+<h4 id="密码框密文变明文–无效–待修改"><a href="#密码框密文变明文–无效–待修改" class="headerlink" title="密码框密文变明文–无效–待修改"></a>密码框密文变明文–无效–待修改</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(function()&#123;var s,F,j,f,i;s=&quot;&quot;;F=document.forms;for(j=0;j&lt;F.length;++j)&#123;f=F;for(i=0;i&lt;f.length;++i)&#123;if(f.type.toLowerCase()==&quot;password&quot;)s+=f.value+&quot;\n&quot;;&#125;&#125;if(s)alert(&quot;Passwords in forms on this page:\n\n&quot;+s);else alert(&quot;There are no passwords in forms on this page.&quot;);&#125;)();</div></pre></td></tr></table></figure>
+<h4 id="查看网站更新时间"><a href="#查看网站更新时间" class="headerlink" title="查看网站更新时间"></a>查看网站更新时间</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">javascript:alert(document.lastModified)</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;把网页转换成编辑模式&quot;&gt;&lt;a href=&quot;#把网页转换成编辑模式&quot; class=&quot;headerlink&quot; title=&quot;把网页转换成编辑模式&quot;&gt;&lt;/a&gt;把网页转换成编辑模式&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;t
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
