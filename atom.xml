@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jsplyy.github.io/"/>
-  <updated>2017-05-29T23:36:13.581Z</updated>
+  <updated>2017-05-29T23:49:10.172Z</updated>
   <id>http://jsplyy.github.io/</id>
   
   <author>
@@ -20,9 +20,346 @@
     <link href="http://jsplyy.github.io/2017/05/30/vim%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
     <id>http://jsplyy.github.io/2017/05/30/vim配置文件/</id>
     <published>2017-05-29T23:36:13.000Z</published>
-    <updated>2017-05-29T23:36:13.581Z</updated>
+    <updated>2017-05-29T23:49:10.172Z</updated>
+    
+    <content type="html"><![CDATA[<p>‘’’<br>“winpos 5 5          “ 设定窗口位置  </p>
+<p>“set lines=40 columns=155    “ 设定窗口大小  </p>
+<p>“set nu              “ 显示行号  </p>
+<p>set go=             “ 不要图形按钮  </p>
+<p>“color asmanian2     “ 设置背景主题  </p>
+<p>set guifont=Courier_New:h10:cANSI   “ 设置字体  </p>
+<p>syntax on           “ 语法高亮  </p>
+<p>autocmd InsertLeave * se nocul  “ 用浅色高亮当前行  </p>
+<p>autocmd InsertEnter * se cul    “ 用浅色高亮当前行  </p>
+<p>“set ruler           “ 显示标尺  </p>
+<p>set showcmd         “ 输入的命令显示出来，看的清楚些  </p>
+<p>“set cmdheight=1     “ 命令行（在状态行下）的高度，设置为1  </p>
+<p>“set whichwrap+=&lt;,&gt;,h,l   “ 允许backspace和光标键跨越行边界(不建议)  </p>
+<p>“set scrolloff=3     “ 光标移动到buffer的顶部和底部时保持3行距离  </p>
+<p>set novisualbell    “ 不要闪烁(不明白)  </p>
+<p>set statusline=%F%m%r%h%w\ [FORMAT=%{&amp;ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\”%d/%m/%y\ -\ %H:%M\”)}   “状态行显示的内容  </p>
+<p>set laststatus=1    “ 启动显示状态行(1),总是显示状态行(2)  </p>
+<p>set foldenable      “ 允许折叠  </p>
+<p>set foldmethod=manual   “ 手动折叠  </p>
+<p>“set background=dark “背景使用黑色 </p>
+<p>set nocompatible  “去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限  </p>
+<p>“ 显示中文帮助</p>
+<p>if version &gt;= 603</p>
+<pre><code>set helplang=cn
+
+set encoding=utf-8
+</code></pre><p>endif</p>
+<p>“ 设置配色方案</p>
+<p>“colorscheme murphy</p>
+<p>“字体 </p>
+<p>“if (has(“gui_running”)) </p>
+<p>“   set guifont=Bitstream\ Vera\ Sans\ Mono\ 10 </p>
+<p>“endif </p>
+<p>set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936</p>
+<p>set termencoding=utf-8</p>
+<p>set encoding=utf-8</p>
+<p>set fileencodings=ucs-bom,utf-8,cp936</p>
+<p>set fileencoding=utf-8</p>
+<p>“””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””</p>
+<p>“””””新文件标题””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””</p>
+<p>“新建.c,.h,.sh,.java文件，自动插入文件头 </p>
+<p>autocmd BufNewFile <em>.cpp,</em>.[ch],<em>.sh,</em>.java exec “:call SetTitle()” </p>
+<p>“”定义函数SetTitle，自动插入文件头 </p>
+<p>func SetTitle() </p>
+<pre><code>&quot;如果文件类型为.sh文件 
+
+if &amp;filetype == &apos;sh&apos; 
+
+    call setline(1,&quot;\#########################################################################&quot;) 
+
+    call append(line(&quot;.&quot;), &quot;\# File Name: &quot;.expand(&quot;%&quot;)) 
+
+    call append(line(&quot;.&quot;)+1, &quot;\# Author: jsplyy&quot;) 
+
+    call append(line(&quot;.&quot;)+2, &quot;\# mail: jsplyy@gmail.com&quot;) 
+
+    call append(line(&quot;.&quot;)+3, &quot;\# Created Time: &quot;.strftime(&quot;%c&quot;)) 
+
+    call append(line(&quot;.&quot;)+4, &quot;\#########################################################################&quot;) 
+
+    call append(line(&quot;.&quot;)+5, &quot;\#!/bin/bash&quot;) 
+
+    call append(line(&quot;.&quot;)+6, &quot;&quot;) 
+
+else 
+
+    call setline(1, &quot;/*************************************************************************&quot;) 
+
+    call append(line(&quot;.&quot;), &quot;    &gt; File Name: &quot;.expand(&quot;%&quot;)) 
+
+    call append(line(&quot;.&quot;)+1, &quot;    &gt; Author: jsplyy&quot;) 
+
+    call append(line(&quot;.&quot;)+2, &quot;    &gt; Mail: jsplyy@gmail.com &quot;) 
+
+    call append(line(&quot;.&quot;)+3, &quot;    &gt; Created Time: &quot;.strftime(&quot;%c&quot;)) 
+
+    call append(line(&quot;.&quot;)+4, &quot; ************************************************************************/&quot;) 
+
+    call append(line(&quot;.&quot;)+5, &quot;&quot;)
+
+endif
+
+if &amp;filetype == &apos;cpp&apos;
+
+    call append(line(&quot;.&quot;)+6, &quot;#include&lt;iostream&gt;&quot;)
+
+    call append(line(&quot;.&quot;)+7, &quot;using namespace std;&quot;)
+
+    call append(line(&quot;.&quot;)+8, &quot;&quot;)
+
+endif
+
+if &amp;filetype == &apos;c&apos;
+
+    call append(line(&quot;.&quot;)+6, &quot;#include&lt;stdio.h&gt;&quot;)
+
+    call append(line(&quot;.&quot;)+7, &quot;&quot;)
+
+endif
+
+&quot;新建文件后，自动定位到文件末尾
+
+autocmd BufNewFile * normal G
+</code></pre><p>endfunc </p>
+<p>“”””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””</p>
+<p>“键盘命令</p>
+<p>“”””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””</p>
+<p>nmap <leader>w :w!<cr></cr></leader></p>
+<p>nmap <leader>f :find<cr></cr></leader></p>
+<p>“ 映射全选+复制 ctrl+a</p>
+<p>map <c-a> ggVGY</c-a></p>
+<p>map! <c-a> <esc>ggVGY</esc></c-a></p>
+<p>map <f12> gg=G</f12></p>
+<p>“ 选中状态下 Ctrl+c 复制</p>
+<p>vmap <c-c> “+y</c-c></p>
+<p>“去空行  </p>
+<p>nnoremap <f2> :g/^\s*$/d<cr> </cr></f2></p>
+<p>“比较文件  </p>
+<p>nnoremap <c-f2> :vert diffsplit </c-f2></p>
+<p>“新建标签  </p>
+<p>map <m-f2> :tabnew<cr>  </cr></m-f2></p>
+<p>“列出当前目录文件  </p>
+<p>map <f3> :tabnew .<cr>  </cr></f3></p>
+<p>“打开树状文件目录  </p>
+<p>map <c-f3> \be  </c-f3></p>
+<p>“C，C++ 按F5编译运行</p>
+<p>map <f5> :call CompileRunGcc()<cr></cr></f5></p>
+<p>func! CompileRunGcc()</p>
+<pre><code>exec &quot;w&quot;
+
+if &amp;filetype == &apos;c&apos;
+
+    exec &quot;!g++ % -o %&lt;&quot;
+
+    exec &quot;! ./%&lt;&quot;
+
+elseif &amp;filetype == &apos;cpp&apos;
+
+    exec &quot;!g++ % -o %&lt;&quot;
+
+    exec &quot;! ./%&lt;&quot;
+
+elseif &amp;filetype == &apos;java&apos; 
+
+    exec &quot;!javac %&quot; 
+
+    exec &quot;!java %&lt;&quot;
+
+elseif &amp;filetype == &apos;sh&apos;
+
+    :!./%
+
+endif
+</code></pre><p>endfunc</p>
+<p>“C,C++的调试</p>
+<p>map <f8> :call Rungdb()<cr></cr></f8></p>
+<p>func! Rungdb()</p>
+<pre><code>exec &quot;w&quot;
+
+exec &quot;!g++ % -g -o %&lt;&quot;
+
+exec &quot;!gdb ./%&lt;&quot;
+</code></pre><p>endfunc</p>
+<p>“”””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””</p>
+<p>“”实用设置</p>
+<p>“””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””</p>
+<p>“ 设置当文件被改动时自动载入</p>
+<p>set autoread</p>
+<p>“ quickfix模式</p>
+<p>autocmd FileType c,cpp map <buffer> <leader><space> :w<cr>:make<cr></cr></cr></space></leader></buffer></p>
+<p>“代码补全 </p>
+<p>set completeopt=preview,menu </p>
+<p>“允许插件  </p>
+<p>filetype plugin on</p>
+<p>“共享剪贴板  </p>
+<p>set clipboard+=unnamed </p>
+<p>“从不备份  </p>
+<p>set nobackup</p>
+<p>“make 运行</p>
+<p>:set makeprg=g++\ -Wall\ \ %</p>
+<p>“自动保存</p>
+<p>set autowrite</p>
+<p>set ruler                   “ 打开状态栏标尺</p>
+<p>set cursorline              “ 突出显示当前行</p>
+<p>set magic                   “ 设置魔术</p>
+<p>set guioptions-=T           “ 隐藏工具栏</p>
+<p>set guioptions-=m           “ 隐藏菜单栏</p>
+<p>“set statusline=\ %&lt;%F[%1<em>%M%</em>%n%R%H]%=\ %y\ %0(%{&amp;fileformat}\ %{&amp;encoding}\ %c:%l/%L%)\</p>
+<p>“ 设置在状态行显示的信息</p>
+<p>set foldcolumn=0</p>
+<p>set foldmethod=indent </p>
+<p>set foldlevel=3 </p>
+<p>set foldenable              “ 开始折叠</p>
+<p>“ 不要使用vi的键盘模式，而是vim自己的</p>
+<p>set nocompatible</p>
+<p>“ 语法高亮</p>
+<p>set syntax=on</p>
+<p>“ 去掉输入错误的提示声音</p>
+<p>set noeb</p>
+<p>“ 在处理未保存或只读文件的时候，弹出确认</p>
+<p>set confirm</p>
+<p>“ 自动缩进</p>
+<p>set autoindent</p>
+<p>set cindent</p>
+<p>“ Tab键的宽度</p>
+<p>set tabstop=4</p>
+<p>“ 统一缩进为4</p>
+<p>set softtabstop=4</p>
+<p>set shiftwidth=4</p>
+<p>“ 不要用空格代替制表符</p>
+<p>set noexpandtab</p>
+<p>“ 在行和段开始处使用制表符</p>
+<p>set smarttab</p>
+<p>“ 显示行号</p>
+<p>set number</p>
+<p>“ 历史记录数</p>
+<p>set history=1000</p>
+<p>“禁止生成临时文件</p>
+<p>set nobackup</p>
+<p>set noswapfile</p>
+<p>“搜索忽略大小写</p>
+<p>set ignorecase</p>
+<p>“搜索逐字符高亮</p>
+<p>set hlsearch</p>
+<p>set incsearch</p>
+<p>“行内替换</p>
+<p>set gdefault</p>
+<p>“编码设置</p>
+<p>set enc=utf-8</p>
+<p>set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936</p>
+<p>“语言设置</p>
+<p>set langmenu=zh_CN.UTF-8</p>
+<p>set helplang=cn</p>
+<p>“ 我的状态行显示的内容（包括文件类型和解码）</p>
+<p>“set statusline=%F%m%r%h%w\ [FORMAT=%{&amp;ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\”%d/%m/%y\ -\ %H:%M\”)}</p>
+<p>“set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]</p>
+<p>“ 总是显示状态行</p>
+<p>set laststatus=2</p>
+<p>“ 命令行（在状态行下）的高度，默认为1，这里是2</p>
+<p>set cmdheight=2</p>
+<p>“ 侦测文件类型</p>
+<p>filetype on</p>
+<p>“ 载入文件类型插件</p>
+<p>filetype plugin on</p>
+<p>“ 为特定文件类型载入相关缩进文件</p>
+<p>filetype indent on</p>
+<p>“ 保存全局变量</p>
+<p>set viminfo+=!</p>
+<p>“ 带有如下符号的单词不要被换行分割</p>
+<p>set iskeyword+=_,$,@,%,#,-</p>
+<p>“ 字符间插入的像素行数目</p>
+<p>set linespace=0</p>
+<p>“ 增强模式中的命令行自动完成操作</p>
+<p>set wildmenu</p>
+<p>“ 使回格键（backspace）正常处理indent, eol, start等</p>
+<p>set backspace=2</p>
+<p>“ 允许backspace和光标键跨越行边界</p>
+<p>set whichwrap+=&lt;,&gt;,h,l</p>
+<p>“ 可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）</p>
+<p>set mouse=a</p>
+<p>set selection=exclusive</p>
+<p>set selectmode=mouse,key</p>
+<p>“ 通过使用: commands命令，告诉我们文件的哪一行被改变过</p>
+<p>set report=0</p>
+<p>“ 在被分割的窗口间显示空白，便于阅读</p>
+<p>set fillchars=vert:\ ,stl:\ ,stlnc:\</p>
+<p>“ 高亮显示匹配的括号</p>
+<p>set showmatch</p>
+<p>“ 匹配括号高亮的时间（单位是十分之一秒）</p>
+<p>set matchtime=1</p>
+<p>“ 光标移动到buffer的顶部和底部时保持3行距离</p>
+<p>set scrolloff=3</p>
+<p>“ 为C程序提供自动缩进</p>
+<p>set smartindent</p>
+<p>“ 高亮显示普通txt文件（需要txt.vim脚本）</p>
+<p>au BufRead,BufNewFile *  setfiletype txt</p>
+<p>“自动补全</p>
+<p>:inoremap ( ()<esc>i</esc></p>
+<p>:inoremap ) <c-r>=ClosePair(‘)’)<cr></cr></c-r></p>
+<p>:inoremap { {<cr>}<esc>O</esc></cr></p>
+<p>:inoremap } <c-r>=ClosePair(‘}’)<cr></cr></c-r></p>
+<p>:inoremap [ []<esc>i</esc></p>
+<p>:inoremap ] <c-r>=ClosePair(‘]’)<cr></cr></c-r></p>
+<p>:inoremap “ “”<esc>i</esc></p>
+<p>:inoremap ‘ ‘’<esc>i</esc></p>
+<p>function! ClosePair(char)</p>
+<pre><code>if getline(&apos;.&apos;)[col(&apos;.&apos;) - 1] == a:char
+
+    return &quot;\&lt;Right&gt;&quot;
+
+else
+
+    return a:char
+
+endif
+</code></pre><p>endfunction</p>
+<p>filetype plugin indent on </p>
+<p>“打开文件类型检测, 加了这句才可以用智能补全</p>
+<p>set completeopt=longest,menu</p>
+<p>“””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””</p>
+<p>“ CTags的设定  </p>
+<p>“””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””</p>
+<p>let Tlist_Sort_Type = “name”    “ 按照名称排序  </p>
+<p>let Tlist_Use_Right_Window = 1  “ 在右侧显示窗口  </p>
+<p>let Tlist_Compart_Format = 1    “ 压缩方式  </p>
+<p>let Tlist_Exist_OnlyWindow = 1  “ 如果只有一个buffer，kill窗口也kill掉buffer  </p>
+<p>let Tlist_File_Fold_Auto_Close = 0  “ 不要关闭其他文件的tags  </p>
+<p>let Tlist_Enable_Fold_Column = 0    “ 不要显示折叠树  </p>
+<p>autocmd FileType java set tags+=D:\tools\java\tags  </p>
+<p>“autocmd FileType h,cpp,cc,c set tags+=D:\tools\cpp\tags  </p>
+<p>“let Tlist_Show_One_File=1            “不同时显示多个文件的tag，只显示当前文件的</p>
+<p>“设置tags  </p>
+<p>set tags=tags  </p>
+<p>“set autochdir </p>
+<p>“”””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””</p>
+<p>“其他东东</p>
+<p>“””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””</p>
+<p>“默认打开Taglist </p>
+<p>let Tlist_Auto_Open=1 </p>
+<p>“””””””””””””””””””””””””””””” </p>
+<p>“ Tag list (ctags) </p>
+<p>“””””””””””””””””””””””””””””””” </p>
+<p>let Tlist_Ctags_Cmd = ‘/usr/bin/ctags’ </p>
+<p>let Tlist_Show_One_File = 1 “不同时显示多个文件的tag，只显示当前文件的 </p>
+<p>let Tlist_Exit_OnlyWindow = 1 “如果taglist窗口是最后一个窗口，则退出vim </p>
+<p>let Tlist_Use_Right_Window = 1 “在右侧窗口中显示taglist窗口</p>
+<p>“ minibufexpl插件的一般设置</p>
+<p>let g:miniBufExplMapWindowNavVim = 1</p>
+<p>let g:miniBufExplMapWindowNavArrows = 1</p>
+<p>let g:miniBufExplMapCTabSwitchBufs = 1<br>let g:miniBufExplModSelTarget = 1<br>‘’’</p>
+]]></content>
     
     <summary type="html">
+    
+      &lt;p&gt;‘’’&lt;br&gt;“winpos 5 5          “ 设定窗口位置  &lt;/p&gt;
+&lt;p&gt;“set lines=40 columns=155    “ 设定窗口大小  &lt;/p&gt;
+&lt;p&gt;“set nu              “ 显示行号  &lt;/p&gt;
+&lt;p&gt;set go=
     
     </summary>
     
