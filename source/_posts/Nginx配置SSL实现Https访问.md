@@ -2,6 +2,7 @@
 title: Nginx配置SSL实现Https访问
 date: 2014-07-09 22:11:23
 tags:
+	- nginx
 ---
 #### 生成根密钥
 ```

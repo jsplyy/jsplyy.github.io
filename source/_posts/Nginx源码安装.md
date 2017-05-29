@@ -2,6 +2,7 @@
 title: Nginx源码安装
 date: 2014-06-09 22:09:20
 tags:
+	- nginx
 ---
 ## nginx 源码安装
 
