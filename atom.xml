@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jsplyy.github.io/"/>
-  <updated>2017-05-29T23:53:40.779Z</updated>
+  <updated>2017-06-05T14:55:12.482Z</updated>
   <id>http://jsplyy.github.io/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>修改mysql root密码</title>
+    <link href="http://jsplyy.github.io/2017/06/05/%E4%BF%AE%E6%94%B9mysql%20root%E5%AF%86%E7%A0%81/"/>
+    <id>http://jsplyy.github.io/2017/06/05/修改mysql root密码/</id>
+    <published>2017-06-05T14:52:52.000Z</published>
+    <updated>2017-06-05T14:55:12.482Z</updated>
+    
+    <content type="html"><![CDATA[<p>####方法1： 用SET PASSWORD命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">首先登录MySQL。 </div><div class="line">格式：mysql&gt; set password for 用户名@localhost = password(&apos;新密码&apos;); </div><div class="line">例子：mysql&gt; set password for root@localhost = password(&apos;123&apos;);</div></pre></td></tr></table></figure></p>
+<p>####方法2：用mysqladmin<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">格式：mysqladmin -u用户名 -p旧密码 password 新密码 </div><div class="line">例子：mysqladmin -uroot -p123456 password 123</div></pre></td></tr></table></figure></p>
+<p>####方法3：用UPDATE直接编辑user表<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">首先登录MySQL。 </div><div class="line">mysql&gt; use mysql; </div><div class="line">mysql&gt; update user set password=password(&apos;123&apos;) where user=&apos;root&apos; and host=&apos;localhost&apos;; </div><div class="line">mysql&gt; flush privileges;</div></pre></td></tr></table></figure></p>
+<p>####方法4：在忘记root密码的时候，可以这样<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">以windows为例： </div><div class="line">1. 关闭正在运行的MySQL服务。 </div><div class="line">2. 打开DOS窗口，转到mysql\bin目录。 </div><div class="line">3. 输入mysqld --skip-grant-tables 回车。--skip-grant-tables 的意思是启动MySQL服务的时候跳过权限表认证。 </div><div class="line">4. 再开一个DOS窗口（因为刚才那个DOS窗口已经不能动了），转到mysql\bin目录。 </div><div class="line">5. 输入mysql回车，如果成功，将出现MySQL提示符 &gt;。 </div><div class="line">6. 连接权限数据库： use mysql; 。 </div><div class="line">6. 改密码：update user set password=password(&quot;123&quot;) where user=&quot;root&quot;;（别忘了最后加分号） 。 </div><div class="line">7. 刷新权限（必须步骤）：flush privileges;　。 </div><div class="line">8. 退出 quit。 </div><div class="line">9. 注销系统，再进入，使用用户名root和刚才设置的新密码123登录。</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;####方法1： 用SET PASSWORD命令&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;
+    
+    </summary>
+    
+      <category term="软件" scheme="http://jsplyy.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="mysql" scheme="http://jsplyy.github.io/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>vim配置文件</title>
@@ -243,6 +269,30 @@
   </entry>
   
   <entry>
+    <title>hexo配置记录</title>
+    <link href="http://jsplyy.github.io/2017/04/09/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>http://jsplyy.github.io/2017/04/09/hexo使用记录/</id>
+    <published>2017-04-09T06:08:20.510Z</published>
+    <updated>2017-04-09T06:08:20.510Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">type: git #注意,这边是git不是github,hexo 3.0以后就要求使用git,不然会出现deploy失败情况.  </div><div class="line">repo: git@github.com:Helloxyw/Helloxyw.github.io.git  </div><div class="line">branch: master</div><div class="line"></div><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<h3 id="换maupassant主题"><a href="#换maupassant主题" class="headerlink" title="换maupassant主题"></a>换maupassant主题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</div><div class="line"></div><div class="line">$ npm install hexo-renderer-jade --save</div><div class="line">$ npm install hexo-renderer-sass --save</div></pre></td></tr></table></figure>
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo d/deploy</div><div class="line"></div><div class="line">hexo d -g</div><div class="line"></div><div class="line">hexo s/server</div></pre></td></tr></table></figure>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">安装node.js</div><div class="line"></div><div class="line">设置npm镜像--</div><div class="line">npm config set registry &quot;https://registry.npm.taobao.org&quot;</div><div class="line"></div><div class="line">配置git</div><div class="line">git config --global user.name &quot;你的GitHub用户名&quot;</div><div class="line">git config --global user.email &quot;你的GitHub注册邮箱&quot;</div><div class="line">ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</div><div class="line"></div><div class="line">安装hexo</div><div class="line">npm install hexo / npm install hexo-cli g</div><div class="line">hexo init blog</div><div class="line">cd blog</div><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<h3 id="git同时push到多个仓库-oschina-github-coding"><a href="#git同时push到多个仓库-oschina-github-coding" class="headerlink" title="git同时push到多个仓库 oschina github coding"></a>git同时push到多个仓库 oschina github coding</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git remote add &lt;主机名&gt; &lt;网址&gt;</div><div class="line">$ git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</div><div class="line">$ git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://jsplyy.github.io/2017/04/09/hello-world/"/>
     <id>http://jsplyy.github.io/2017/04/09/hello-world/</id>
@@ -265,30 +315,6 @@
     <summary type="html">
     
       &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;auto generate&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hexo配置记录</title>
-    <link href="http://jsplyy.github.io/2017/04/09/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
-    <id>http://jsplyy.github.io/2017/04/09/hexo使用记录/</id>
-    <published>2017-04-09T06:08:20.510Z</published>
-    <updated>2017-04-09T06:08:20.510Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">type: git #注意,这边是git不是github,hexo 3.0以后就要求使用git,不然会出现deploy失败情况.  </div><div class="line">repo: git@github.com:Helloxyw/Helloxyw.github.io.git  </div><div class="line">branch: master</div><div class="line"></div><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<h3 id="换maupassant主题"><a href="#换maupassant主题" class="headerlink" title="换maupassant主题"></a>换maupassant主题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</div><div class="line"></div><div class="line">$ npm install hexo-renderer-jade --save</div><div class="line">$ npm install hexo-renderer-sass --save</div></pre></td></tr></table></figure>
-<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo d/deploy</div><div class="line"></div><div class="line">hexo d -g</div><div class="line"></div><div class="line">hexo s/server</div></pre></td></tr></table></figure>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">安装node.js</div><div class="line"></div><div class="line">设置npm镜像--</div><div class="line">npm config set registry &quot;https://registry.npm.taobao.org&quot;</div><div class="line"></div><div class="line">配置git</div><div class="line">git config --global user.name &quot;你的GitHub用户名&quot;</div><div class="line">git config --global user.email &quot;你的GitHub注册邮箱&quot;</div><div class="line">ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</div><div class="line"></div><div class="line">安装hexo</div><div class="line">npm install hexo / npm install hexo-cli g</div><div class="line">hexo init blog</div><div class="line">cd blog</div><div class="line">hexo generate</div></pre></td></tr></table></figure>
-<h3 id="git同时push到多个仓库-oschina-github-coding"><a href="#git同时push到多个仓库-oschina-github-coding" class="headerlink" title="git同时push到多个仓库 oschina github coding"></a>git同时push到多个仓库 oschina github coding</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git remote add &lt;主机名&gt; &lt;网址&gt;</div><div class="line">$ git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</div><div class="line">$ git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -322,7 +348,7 @@
     <link href="http://jsplyy.github.io/2014/07/09/Nginx%E9%85%8D%E7%BD%AESSL%E5%AE%9E%E7%8E%B0Https%E8%AE%BF%E9%97%AE/"/>
     <id>http://jsplyy.github.io/2014/07/09/Nginx配置SSL实现Https访问/</id>
     <published>2014-07-09T14:11:23.000Z</published>
-    <updated>2017-04-10T00:15:49.818Z</updated>
+    <updated>2017-05-29T23:57:18.706Z</updated>
     
     <content type="html"><![CDATA[<h4 id="生成根密钥"><a href="#生成根密钥" class="headerlink" title="生成根密钥"></a>生成根密钥</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">openssl genrsa -out ca.key 2048</div><div class="line">/</div><div class="line">openssl genrsa -out cakey.pem 2048</div></pre></td></tr></table></figure>
 <h4 id="生成根证书"><a href="#生成根证书" class="headerlink" title="生成根证书"></a>生成根证书</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">openssl req -new -x509 -key ca.key -out ca.cert</div><div class="line">/</div><div class="line">openssl req -new -x509 -key cakey.pem -out cacert.pem</div></pre></td></tr></table></figure>
@@ -342,6 +368,8 @@
     </summary>
     
     
+      <category term="nginx" scheme="http://jsplyy.github.io/tags/nginx/"/>
+    
   </entry>
   
   <entry>
@@ -349,7 +377,7 @@
     <link href="http://jsplyy.github.io/2014/06/09/Nginx%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/"/>
     <id>http://jsplyy.github.io/2014/06/09/Nginx源码安装/</id>
     <published>2014-06-09T14:09:20.000Z</published>
-    <updated>2017-05-29T23:47:33.525Z</updated>
+    <updated>2017-05-29T23:57:53.734Z</updated>
     
     <content type="html"><![CDATA[<h2 id="nginx-源码安装"><a href="#nginx-源码安装" class="headerlink" title="nginx 源码安装"></a>nginx 源码安装</h2><h4 id="configure参数"><a href="#configure参数" class="headerlink" title="configure参数"></a>configure参数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">./configure --user=nginx --group=nginx --prefix=/usr/local/nginx --with-http_ssl_module --add-module=../ngx_cache_purge-2.3 --with-pcre=/home/ubuntu/nginx_source/pcre-8.40 --with-zlib=/home/ubuntu/nginx_source/zlib-1.2.11 --with-http_stub_status_module --with-threads --with-http_sub_module --with-http_flv_module --with-http_gzip_static_module</div></pre></td></tr></table></figure>
 <h4 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo make &amp;&amp; sudo make install</div></pre></td></tr></table></figure>
@@ -370,9 +398,7 @@
     </summary>
     
     
-      <category term="vim" scheme="http://jsplyy.github.io/tags/vim/"/>
-    
-      <category term="linux" scheme="http://jsplyy.github.io/tags/linux/"/>
+      <category term="nginx" scheme="http://jsplyy.github.io/tags/nginx/"/>
     
   </entry>
   
