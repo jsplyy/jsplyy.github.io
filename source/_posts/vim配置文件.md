@@ -1,6 +1,6 @@
 ---
 title: vim配置文件
-date: 2017-05-30 07:36:13
+date: 2014-05-30 07:36:13
 tags:
     - vim
     - linux
