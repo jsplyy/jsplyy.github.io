@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jsplyy.github.io/"/>
-  <updated>2017-05-17T17:55:43.508Z</updated>
+  <updated>2017-06-25T09:47:11.698Z</updated>
   <id>http://jsplyy.github.io/</id>
   
   <author>
@@ -14,6 +14,74 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python trick</title>
+    <link href="http://jsplyy.github.io/2017/06/25/python-trick/"/>
+    <id>http://jsplyy.github.io/2017/06/25/python-trick/</id>
+    <published>2017-06-25T09:02:18.000Z</published>
+    <updated>2017-06-25T09:47:11.698Z</updated>
+    
+    <content type="html"><![CDATA[<p>####if简写<br>‘’’<br>c = a if a&gt;b else b<br>c = [b,a][a&gt;b]<br>c = (a&gt;b and [a] or [b])[0]<br>‘’’</p>
+<p>####删除目录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">shutil.rmtree(dir_name)</div></pre></td></tr></table></figure></p>
+<p>####字典访问<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">for key in dic:</div><div class="line">for (k,v) in dic.items():</div><div class="line">for k,v in dic.iteritems():</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;####if简写&lt;br&gt;‘’’&lt;br&gt;c = a if a&amp;gt;b else b&lt;br&gt;c = [b,a][a&amp;gt;b]&lt;br&gt;c = (a&amp;gt;b and [a] or [b])[0]&lt;br&gt;‘’’&lt;/p&gt;
+&lt;p&gt;####删除目录&lt;br&gt;&lt;figure class=
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://jsplyy.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://jsplyy.github.io/2017/06/25/blog/hh/"/>
+    <id>http://jsplyy.github.io/2017/06/25/blog/hh/</id>
+    <published>2017-06-25T08:18:50.067Z</published>
+    <updated>2017-06-25T08:18:50.067Z</updated>
+    
+    <content type="html"><![CDATA[<p># </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;# &lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>查找python项目依赖并生成requirements.txt</title>
+    <link href="http://jsplyy.github.io/2017/06/25/%E6%9F%A5%E6%89%BEpython%E9%A1%B9%E7%9B%AE%E4%BE%9D%E8%B5%96%E5%B9%B6%E7%94%9F%E6%88%90requirements-txt/"/>
+    <id>http://jsplyy.github.io/2017/06/25/查找python项目依赖并生成requirements-txt/</id>
+    <published>2017-06-25T07:49:36.000Z</published>
+    <updated>2017-06-25T08:28:37.721Z</updated>
+    
+    <content type="html"><![CDATA[<p>####使用pip freeze<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip freeze &gt; requirements.txt</div></pre></td></tr></table></figure></p>
+<p>这种方式配合virtualenv 才好使，否则把整个环境中的包都列出来了。</p>
+<p>####使用 pipreqs<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pipreqs ./</div></pre></td></tr></table></figure></p>
+<p>这个工具的好处是可以通过对项目目录的扫描，自动发现使用了那些类库，自动生成依赖清单。<br>缺点是可能会有些偏差，需要检查并自己调整下。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;####使用pip freeze&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;cod
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://jsplyy.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>keil命令行下载程序</title>
@@ -175,30 +243,6 @@
   </entry>
   
   <entry>
-    <title>hexo配置记录</title>
-    <link href="http://jsplyy.github.io/2017/04/09/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
-    <id>http://jsplyy.github.io/2017/04/09/hexo使用记录/</id>
-    <published>2017-04-09T06:08:20.510Z</published>
-    <updated>2017-04-09T06:08:20.510Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">type: git #注意,这边是git不是github,hexo 3.0以后就要求使用git,不然会出现deploy失败情况.  </div><div class="line">repo: git@github.com:Helloxyw/Helloxyw.github.io.git  </div><div class="line">branch: master</div><div class="line"></div><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<h3 id="换maupassant主题"><a href="#换maupassant主题" class="headerlink" title="换maupassant主题"></a>换maupassant主题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</div><div class="line"></div><div class="line">$ npm install hexo-renderer-jade --save</div><div class="line">$ npm install hexo-renderer-sass --save</div></pre></td></tr></table></figure>
-<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo d/deploy</div><div class="line"></div><div class="line">hexo d -g</div><div class="line"></div><div class="line">hexo s/server</div></pre></td></tr></table></figure>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">安装node.js</div><div class="line"></div><div class="line">设置npm镜像--</div><div class="line">npm config set registry &quot;https://registry.npm.taobao.org&quot;</div><div class="line"></div><div class="line">配置git</div><div class="line">git config --global user.name &quot;你的GitHub用户名&quot;</div><div class="line">git config --global user.email &quot;你的GitHub注册邮箱&quot;</div><div class="line">ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</div><div class="line"></div><div class="line">安装hexo</div><div class="line">npm install hexo / npm install hexo-cli g</div><div class="line">hexo init blog</div><div class="line">cd blog</div><div class="line">hexo generate</div></pre></td></tr></table></figure>
-<h3 id="git同时push到多个仓库-oschina-github-coding"><a href="#git同时push到多个仓库-oschina-github-coding" class="headerlink" title="git同时push到多个仓库 oschina github coding"></a>git同时push到多个仓库 oschina github coding</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git remote add &lt;主机名&gt; &lt;网址&gt;</div><div class="line">$ git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</div><div class="line">$ git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="http://jsplyy.github.io/2017/04/09/hello-world/"/>
     <id>http://jsplyy.github.io/2017/04/09/hello-world/</id>
@@ -221,6 +265,30 @@
     <summary type="html">
     
       &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;auto generate&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo配置记录</title>
+    <link href="http://jsplyy.github.io/2017/04/09/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>http://jsplyy.github.io/2017/04/09/hexo使用记录/</id>
+    <published>2017-04-09T06:08:20.510Z</published>
+    <updated>2017-04-09T06:08:20.510Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">type: git #注意,这边是git不是github,hexo 3.0以后就要求使用git,不然会出现deploy失败情况.  </div><div class="line">repo: git@github.com:Helloxyw/Helloxyw.github.io.git  </div><div class="line">branch: master</div><div class="line"></div><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<h3 id="换maupassant主题"><a href="#换maupassant主题" class="headerlink" title="换maupassant主题"></a>换maupassant主题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</div><div class="line"></div><div class="line">$ npm install hexo-renderer-jade --save</div><div class="line">$ npm install hexo-renderer-sass --save</div></pre></td></tr></table></figure>
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo d/deploy</div><div class="line"></div><div class="line">hexo d -g</div><div class="line"></div><div class="line">hexo s/server</div></pre></td></tr></table></figure>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">安装node.js</div><div class="line"></div><div class="line">设置npm镜像--</div><div class="line">npm config set registry &quot;https://registry.npm.taobao.org&quot;</div><div class="line"></div><div class="line">配置git</div><div class="line">git config --global user.name &quot;你的GitHub用户名&quot;</div><div class="line">git config --global user.email &quot;你的GitHub注册邮箱&quot;</div><div class="line">ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</div><div class="line"></div><div class="line">安装hexo</div><div class="line">npm install hexo / npm install hexo-cli g</div><div class="line">hexo init blog</div><div class="line">cd blog</div><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<h3 id="git同时push到多个仓库-oschina-github-coding"><a href="#git同时push到多个仓库-oschina-github-coding" class="headerlink" title="git同时push到多个仓库 oschina github coding"></a>git同时push到多个仓库 oschina github coding</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git remote add &lt;主机名&gt; &lt;网址&gt;</div><div class="line">$ git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</div><div class="line">$ git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -253,9 +321,9 @@
     <link href="http://jsplyy.github.io/2015/04/09/Web%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
     <id>http://jsplyy.github.io/2015/04/09/Web前端学习/</id>
     <published>2015-04-09T13:34:33.000Z</published>
-    <updated>2017-06-10T16:40:24.044Z</updated>
+    <updated>2017-06-25T12:39:53.449Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="进阶步骤"><a href="#进阶步骤" class="headerlink" title="进阶步骤"></a>进阶步骤</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">首先学习HTML标签语法</div><div class="line"></div><div class="line">学习css对网页元素样式进行设计</div><div class="line"></div><div class="line">学习javascript设计交互式网页</div><div class="line"></div><div class="line">每一部分都要多做练习</div></pre></td></tr></table></figure>
+    <content type="html"><![CDATA[<h3 id="进阶步骤"><a href="#进阶步骤" class="headerlink" title="进阶步骤"></a>进阶步骤</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">首先学习HTML标签语法</div><div class="line">学习css对网页元素样式进行设计</div><div class="line">学习javascript设计交互式网页</div><div class="line">每一部分都要多做练习</div></pre></td></tr></table></figure>
 <h3 id="学习网站"><a href="#学习网站" class="headerlink" title="学习网站"></a>学习网站</h3><hr>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/" target="_blank" rel="external">Web technology for developers</a><br><a href="http://www.w3school.com.cn/" target="_blank" rel="external">W3School中文教程</a><br><a href="https://www.w3schools.com/default.asp" target="_blank" rel="external">W3School</a><br><a href="http://www.runoob.com/" target="_blank" rel="external">菜鸟教程</a></p>
 <h3 id="参考书籍"><a href="#参考书籍" class="headerlink" title="参考书籍"></a>参考书籍</h3><hr>
